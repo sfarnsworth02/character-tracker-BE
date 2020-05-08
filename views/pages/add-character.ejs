@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ('../components/head') %>
+</head>
+
+<body class="container">
+
+    <header>
+        <%- include ('../components/header') %>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+            <h1>Add Character</h1>
+            <form id="addForm">
+                <p>Name: <input name='name' /></p>
+                <p>Class: <input name='class' /></p>
+                <p>Level: <input name='class' /></p>
+                <p>Background: <input name='class' /></p>
+                <p>Player: <input name='class' /></p>
+                <p>Race: <input name='class' /></p>
+                <p>Alignment: <input name='class' /></p>
+                <p>Level: <input name='class' /></p>
+                <input id="submitBtn" type="submit" value="submit" />
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <%- include ('../components/footer') %>
+    </footer>
+    <script type="text/javascript">
+        const form = document.getElementById('addForm');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+        });
+    </script>
+
+</body>
+
+</html>

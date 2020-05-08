@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ('../components/head') %>
+</head>
+
+<body class="container">
+
+    <header>
+        <%- include ('../components/header') %>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+            <h1><%= character.name %></h1>
+            <p>Level <%= character.level %> %= character.race %> <%= character.class %></p>
+            <p>Background: <%= character.background %></p>
+            <p>Player: <%= character.playerName %></p>
+            <p>Alignment: <%= character.alignment %></p>
+            <p>Current Experience: <%= character.experience %></p>
+        </div>
+    </main>
+
+    <footer>
+        <%- include ('../components/footer') %>
+    </footer>
+
+</body>
+
+</html>
